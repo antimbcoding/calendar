@@ -8,7 +8,7 @@ import java.awt.event.WindowEvent;
 
 public class MainWindow extends Frame{
     
-    //constructor (has to be public so it can be called by calendar)
+    //constructor (has to be public so it can be called by calendar) 
     public MainWindow(){
         super("Calendar");
 

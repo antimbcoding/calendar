@@ -38,6 +38,17 @@ public class CalendarManager {
         return days;
     }
 
+    //returns the integer representing which day of the week (name) the first day of the month is
+    public int getFirstDayOfMonth(){
+        Calendar temp = new GregorianCalendar(
+                current.get(Calendar.YEAR),
+                current.get(Calendar.MONTH),
+                1
+        );
+        temp.set(Calendar.DAY_OF_MONTH, 1);
+        return temp.get(Calendar.DAY_OF_WEEK);
+    }
+
     public String getCurrentMonthName(){
         return new SimpleDateFormat("MMMMMMMMM yyyy").format(current.getTime());
     }

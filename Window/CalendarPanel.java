@@ -46,10 +46,10 @@ public class CalendarPanel extends JPanel{
         monthHeader = new JLabel("MONTH", SwingConstants.CENTER);
         monthHeader.setFont(new Font("SansSerif", Font.BOLD, 32));
 
-        dayHeader = new JPanel(new GridLayout(1, 5, 5, 5));
+        dayHeader = new JPanel(new GridLayout(1, 5, 3, 5));
         dayHeader.setBackground(new Color(198, 202, 228));
 
-        daysPanel = new JPanel(new GridLayout(5, 7, 5, 5));
+        daysPanel = new JPanel(new GridLayout(6, 7, 3, 3));
         daysPanel.setBackground(new Color(198, 202, 228));
         calendar = new CalendarManager();
 
@@ -97,7 +97,7 @@ public class CalendarPanel extends JPanel{
             count++;
         }
         
-        for(int i = count; i<35; i++){
+        for(int i = count; i<42; i++){
             JLabel blank = createDayLabel("");
             daysPanel.add(blank);
         }

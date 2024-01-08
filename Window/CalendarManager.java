@@ -16,11 +16,11 @@ public class CalendarManager {
 
     //methods for calendar traversal
     public void nextMonth(){
-        current.add(current.MONTH, 1);
+        current.add(Calendar.MONTH, 1);
     }
 
     public void prevMonth(){
-        current.add(current.MONTH, -1);
+        current.add(Calendar.MONTH, -1);
     }
 
     public String[] getDayNames(){
